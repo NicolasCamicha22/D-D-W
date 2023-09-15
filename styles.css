@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -27,7 +26,8 @@ section h1 {
 }
 
 .conte {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .conte p {
@@ -39,11 +39,8 @@ section h1 {
 .conte a{
     color: white;
     text-decoration: none;
-    background: #8BC34A;
-    padding: 4px 20px;
-    border-radius: 30px;
-    font-size: 30px;
-    margin: 10px;
+    background: black;
+    
 }
 
 div.tarjeta {
@@ -71,4 +68,20 @@ p.letra {
 
 table.cartas{
     padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
 }
