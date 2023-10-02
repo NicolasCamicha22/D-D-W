@@ -110,11 +110,14 @@ nav ul li a {
     margin: 0 auto;
 }
 
+
+/* CSS para footer */
 .pie-de-pagina {
     width: 100%;
     background-color: rgb(209, 170, 177);
 }
 
+/* CSS para footer 3 columnas */
 .pie-de-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -125,51 +128,84 @@ nav ul li a {
     padding: 45px 0px;
 }
 
-.pie-de-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+
+/* CSS para footer imagen */
+.pie-de-pagina .grupo-1 .box figure img {
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 10%;
+    height: 10%;
+
 }
 
-.pie-de-pagina .grupo-1 .box figure img {
-    width: 250px;
-}
-
+/* CSS para footer segunda columna (color y tamaño de letra del titulo) */
 .pie-de-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
+
+    
 }
 
+/* CSS para footer segunda columna (color y tamaño de letra del parrafo) */
 .pie-de-pagina .grupo-1 .box p {
     color: #fff;
     margin-bottom: 10px;
 }
 
-.pie-de-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    text-align: center;
-}
 
-.pie-de-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
-    margin: 0 auto;
-}
-
+/* CSS para footer derechos reservados */
 .pie-de-pagina .grupo-2 {
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
 
-.pie-de-pagina .grupo-2 small{
+.pie-de-pagina .grupo-2 small {
     font-size: 15px;
+}
+
+
+/* CSS para formulario de reservas */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
